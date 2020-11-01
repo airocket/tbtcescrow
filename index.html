@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Register information at Blockchain</title>
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>    
+  </head>
+
+  <body class="container">
+
+    <h1 class="page-header">TBTC Escrow (use only Ropsten !!!) </h1>
+
+    <div class="row">
+      <div>
+        
+        <form class="form-inline" role="form">
+          <a href="#" onclick="connectMetamsk()" class="btn btn-primary">Connect Metamask</a>
+                  
+        </form>
+      </div>
+    </div>
+    <h3 class="sub-header">Set information</h3>
+    <div class="row">
+      <div>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="token1">Adress sell token:</label> </td>
+                <td>
+                  <input class="form-control" id="token1">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>    
+
+    <div class="row">
+      <div>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="amount1">Amount sell token:</label> </td>
+                <td>
+                  <input class="form-control" id="amount1">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>    
+
+    <div class="row">
+      <div>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="token2">Adress buy token:</label> </td>
+                <td>
+                  <input class="form-control" id="token2">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>    
+
+    <div class="row">
+      <div>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="owner2">Adress owner sell:</label> </td>
+                <td>
+                  <input class="form-control" id="owner2">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>    
+      
+    <div class="row">
+      <div>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="amount2">Amount buy token:</label> </td>
+                <td>
+                  <input class="form-control" id="amount2">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>    
+
+    <div class="row">
+      <div>
+        
+        <form class="form-inline" role="form">
+          <a href="#" onclick="approve()" class="btn btn-primary">Create Escriow</a>
+          <a href="#" onclick="runEscriow()" class="btn btn-primary">Run Escriow</a>
+          <a href="#" onclick="delEscriow()" class="btn btn-primary">Del Escriow</a>
+
+                  
+        </form>
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Get last information adress2</h3>
+        <a href="#" onclick="getEscrow()" class="btn btn-primary">Get info adress2</a>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td>owner1:</td>
+                <td>
+                  <label id="_owner1">
+                </td>                          
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>token1:</td>
+                <td>
+                  <label id="_token1">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>amount1:</td>
+                <td>
+                  <label id="_amount1">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>owner2:</td>
+                <td>
+                  <label id="_owner2">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>token2:</td>
+                <td>
+                  <label id="_token2">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>amount2:</td>
+                <td>
+                  <label id="_amount2">
+                </td>
+              </tr>
+            </table>
+          </div>                
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

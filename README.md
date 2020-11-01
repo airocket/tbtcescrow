@@ -1,4 +1,4 @@
-# tbtcescrow
+# TBTCEscrow
 
 Disclaimer: for entertainment only, do not use for trading decisions.
 
